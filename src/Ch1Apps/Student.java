@@ -21,7 +21,6 @@ public class Student {
     }
 
     public static void setCount(int count) {
-        
         Student.count = count;
     }
     
