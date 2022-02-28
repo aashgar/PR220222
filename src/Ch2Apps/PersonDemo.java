@@ -11,15 +11,8 @@ package Ch2Apps;
  */
 public class PersonDemo {
     public static void main(String[] args) {
-        Person person = new Person();
-        Student student = new Student();
-        Employee employee = new Employee();
-        Person person1 = new Employee();
-        Person person2 = new Student();
-        Person[] persons = {
-            new Student(),
-            new Employee()
-        };
-        
-    }
+//        Employee employee = new Employee();
+    Employee employee = new Employee("Ali", 333, 1200.5);
+    employee.showData();
+   }
 }

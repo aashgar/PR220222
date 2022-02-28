@@ -10,8 +10,17 @@ package Ch2Apps;
  * @author aashgar
  */
 public class Person {
-    private String name;
+//    private String name;
+        protected  String name;
 
+    public Person() {
+//        this("ali");
+    }
+    
+    public Person(String name) {
+        this.name = name;
+    }
+    
     public String getName() {
         return name;
     }
@@ -19,5 +28,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    
+   public void showData(){
+       System.out.println(this.name);
+   } 
 }

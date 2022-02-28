@@ -12,7 +12,18 @@ package Ch2Apps;
 public class Employee extends Person{
     private long eid;
     private double salary;
+    private final int tax=10;
 
+    public Employee() {
+     
+    }
+
+    public Employee(String name, long eid, double salary ) {
+        super(name);
+        this.eid = eid;
+        this.salary = salary;
+    }
+    
     public long getEid() {
         return eid;
     }
@@ -28,5 +39,9 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
-    
+    public void showData(){
+        super.showData();
+       System.out.println("ID:" +this.eid);
+        System.err.println("Salary: "+ this.salary);
+   }
 }
