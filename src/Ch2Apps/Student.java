@@ -13,6 +13,17 @@ public class Student extends Person{
     private int sid;
     private double grade;
 
+    public Student(int sid, double grade) {
+        this.sid = sid;
+        this.grade = grade;
+    }
+
+    public Student( String name,int sid, double grade) {
+        super(name);
+        this.sid = sid;
+        this.grade = grade;
+    }
+
     public int getSid() {
         
         return sid;
@@ -29,5 +40,13 @@ public class Student extends Person{
     public void setGrade(double grade) {
         this.grade = grade;
     }
+
+    @Override
+    public void showData() {
+        super.showData(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("ID: "+ this.sid);
+        System.out.println("Grade: "+ this.grade);
+    }
+    
     
 }

@@ -20,6 +20,7 @@ public class Employee extends Person{
 
     public Employee(String name, long eid, double salary ) {
         super(name);
+        this.name = name;
         this.eid = eid;
         this.salary = salary;
     }
@@ -42,6 +43,9 @@ public class Employee extends Person{
     public void showData(){
         super.showData();
        System.out.println("ID:" +this.eid);
-        System.err.println("Salary: "+ this.salary);
+       System.out.println("Salary: "+ this.salary);
+        
    }
+    
+   
 }

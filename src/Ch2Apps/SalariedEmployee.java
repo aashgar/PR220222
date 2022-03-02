@@ -12,6 +12,16 @@ package Ch2Apps;
 public class SalariedEmployee extends Employee{
     private double overTime;
 
+    public SalariedEmployee(double overTime) {
+        this.overTime = overTime;
+    }
+
+    public SalariedEmployee( 
+            String name, long eid, double salary, double overTime) {
+        super(name, eid, salary);
+        this.overTime = overTime;
+    }
+    
     public double getOverTime() {
         
         return overTime;
@@ -19,6 +29,12 @@ public class SalariedEmployee extends Employee{
 
     public void setOverTime(double overTime) {
         this.overTime = overTime;
+    }
+
+    @Override
+    public void showData() {
+        super.showData(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("OverTime: "+ this.overTime);
     }
     
 }

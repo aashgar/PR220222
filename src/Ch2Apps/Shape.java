@@ -9,18 +9,13 @@ package Ch2Apps;
  *
  * @author aashgar
  */
-public class Person {
-//    private String name;
-        protected  String name;
+public class Shape {
+    private String name;
 
-    public Person() {
-//        this("ali");
-    }
-    
-    public Person(String name) {
+    public Shape(String name) {
         this.name = name;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -28,7 +23,8 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-   public void showData(){
-       System.out.println("Name: "+this.name);
-   } 
+    public void showData(){
+        System.out.println("Name: "+ this.name);
+    }
+    
 }
