@@ -26,5 +26,10 @@ public class Shape {
     public void showData(){
         System.out.println("Name: "+ this.name);
     }
+
+    @Override
+    public String toString() {
+        return "Shape{" + "name=" + name + '}';
+    }
     
 }
