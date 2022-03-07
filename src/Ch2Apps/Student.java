@@ -47,6 +47,15 @@ public class Student extends Person{
         System.out.println("ID: "+ this.sid);
         System.out.println("Grade: "+ this.grade);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +  "name=" + name + ", sid=" + sid + ", grade=" + grade + '}';
+    }
+
+    @Override
+    public void printData() {
+    }
     
     
 }

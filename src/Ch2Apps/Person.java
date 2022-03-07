@@ -9,7 +9,7 @@ package Ch2Apps;
  *
  * @author aashgar
  */
-public class Person {
+public abstract class Person {
 //    private String name;
         protected  String name;
 
@@ -30,5 +30,7 @@ public class Person {
     }
    public void showData(){
        System.out.println("Name: "+this.name);
-   } 
+   }
+   
+   public abstract void printData();
 }

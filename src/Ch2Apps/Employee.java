@@ -46,6 +46,10 @@ public class Employee extends Person{
        System.out.println("Salary: "+ this.salary);
         
    }
+
+    @Override
+    public void printData() {
+    }
     
    
 }
