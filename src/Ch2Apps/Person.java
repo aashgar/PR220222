@@ -30,7 +30,6 @@ public abstract class Person {
     }
    public void showData(){
        System.out.println("Name: "+this.name);
-   }
-   
+   } 
    public abstract void printData();
 }

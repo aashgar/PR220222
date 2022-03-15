@@ -12,6 +12,7 @@ package Ch2Apps;
 public class Student extends Person{
     private int sid;
     private double grade;
+    private Employee employee;
 
     public Student(int sid, double grade) {
         this.sid = sid;
@@ -50,7 +51,7 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "Student{" +  "name=" + name + ", sid=" + sid + ", grade=" + grade + '}';
+        return "Student{" + "name=" + super.name + "sid=" + sid + ", grade=" + grade + '}';
     }
 
     @Override

@@ -13,6 +13,7 @@ public class Employee extends Person{
     private long eid;
     private double salary;
     private final int tax=10;
+    private Student student;
 
     public Employee() {
      
@@ -40,6 +41,7 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+    @Override
     public void showData(){
         super.showData();
        System.out.println("ID:" +this.eid);

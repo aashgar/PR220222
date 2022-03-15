@@ -11,6 +11,7 @@ package Ch2Apps;
  */
 public class PersonDemo2 {
     public static void main(String[] args) {
+        Person person = new Student("sss", 222, 90);
         Object[] persons={
           new Student("Ali", 111, 90),
           new Student("Ahmad", 222, 80),
