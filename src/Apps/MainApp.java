@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ch4Apps2;
+package Apps;
 
 /**
  *
@@ -11,9 +11,10 @@ package Ch4Apps2;
  */
 public class MainApp {
     public static void main(String[] args) {
-        Rectangle m = new Rectangle(5, 10);
-        
-        System.out.println(m.showData("Perimeter:") + m.getperimeter());
-    
+        System.out.println(sqrt(-100));
+    }
+    private static double sqrt(double v){
+        assert v>=0: "Not valid ...";
+        return Math.sqrt(v);
     }
 }
