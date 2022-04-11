@@ -9,15 +9,13 @@ package Ch5Apps;
  *
  * @author aashgar
  */
-public class Student {
-    private int id;
+public class DivideByZero extends ArithmeticException{
 
-    public int getId() {
-        return id;
+    public DivideByZero() {
+        super();
     }
-
-    public void setId(int id) {
-        this.id = id;
+    public DivideByZero(String message){
+        super(message);
     }
     
 }
