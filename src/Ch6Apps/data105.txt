@@ -3,3 +3,4 @@ ID,Name,Department,Salary
 333,Ali,Sales,900.5
 555,Waseem,Security,3000.5
 200,Huda,Secratery,600.7
+300,Sami,IT,1250.5
